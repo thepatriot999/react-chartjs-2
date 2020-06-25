@@ -292,10 +292,11 @@ class ChartComponent extends React.Component {
   }
 
   render() {
-    const {height, width, id} = this.props;
+    const {height, width, id, class} = this.props;
 
     return (
       <canvas
+        className={class}
         ref={this.ref}
         height={height}
         width={width}
